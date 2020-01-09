@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+// import { HttpModule,JsonpModule } from '@angular/http';
+import {HttpClientModule, HttpClientJsonpModule} from "@angular/common/http";
 
 import { MatIconModule } from '@angular/material/icon';
 
@@ -95,7 +97,10 @@ import { CommandexecutionlogComponent } from './components/audits/commandexecuti
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
+    HttpClientJsonpModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
