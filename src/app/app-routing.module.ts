@@ -73,10 +73,10 @@ const routes: Routes = [
    ]},
   {path: "perms", component: PermsComponent, children: [
       {path: "asset-permission", component: AssetpermissionComponent},
-      {path: "remote-app-permissio", component: RemoteapppermissionComponent},
+      {path: "remote-app-permission", component: RemoteapppermissionComponent},
       {path: "database-app-permission", component: DatabaseapppermissionComponent},
   ]},
-  {path: "sessions", component: TerminalComponent, children: [
+  {path: "terminal", component: TerminalComponent, children: [
       {path: "session-online", component: SessiononlineComponent},
       {path: "session-offline", component: SessionofflineComponent},
       {path: "command", component: CommandComponent},

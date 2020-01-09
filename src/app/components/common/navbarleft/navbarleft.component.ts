@@ -69,10 +69,10 @@ export class NavbarleftComponent implements OnInit {
       second_level:[
         {id: "session-online", name: "在线会话", link:"/terminal/session-online/"},
         {id: "session-offline", name: "历史会话", link:"/terminal/session-offline/"},
-        {id: "command", name: "命令记录", link:""},
-        {id: "web-terminal", name: "web终端", link:"/terminal/command/"},
+        {id: "command", name: "命令记录", link:"terminal/command"},
+        {id: "web-terminal", name: "web终端", link:""},
         {id: "file-manage", name: "文件管理", link:""},
-        {id: "terminal", name: "终端管理", link:"/terminal/command/"},
+        {id: "terminal", name: "终端管理", link:""},
       ]
     },
     { id: "ops",
@@ -82,8 +82,8 @@ export class NavbarleftComponent implements OnInit {
       left_icon: "local_cafe",
       second_level:[
         {id: "task", name: "任务列表", link:"/ops/task/"},
-        {id: "command-execution", name: "批量命令", link:"/ops/command-execution/create/"},
-        {id: "database-app-permission", name: "任务监控", link:"/flower/"}
+        {id: "command-execution", name: "批量命令", link:"/ops/command-execution/"},
+        {id: "flower", name: "任务监控", link:"/flower/"}
       ]
     },
     { id: "tickets",
