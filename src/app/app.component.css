@@ -1,0 +1,38 @@
+#wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #2f4050;
+}
+
+.navbar-default{
+  background-color: #2f4050;
+  border-color: #2f4050;
+}
+
+.navbar-static-side {
+  z-index: 2001;
+  position: absolute;
+  width: 220px;
+  min-height: 2002px;
+}
+
+#page-wrapper {
+  margin: 0 0 0 220px;
+  min-height: 2002px;
+  /*padding: 0 10px;*/
+  position: relative !important;
+}
+
+.gray-bg {
+  background-color: #f3f3f4;
+}
+
+.row{
+  min-height: 50px;
+  background-color: white;
+}
+/*.navbar{*/
+/*  position: relative;*/
+/*  min-height: 50px;*/
+/*  background-color: white;*/
+/*}*/

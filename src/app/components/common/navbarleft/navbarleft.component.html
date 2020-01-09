@@ -1,0 +1,23 @@
+<div class="sidebar-collapse">
+  <ul class="nav" id="side-menu">
+    <li *ngFor="let item of navbar_list; let key=index" [id]="item.id">
+      <a [routerLink]="item.link" routerLinkActive="active" (click)="isOpenSecond(item.id)">
+        <mat-icon style="font-size: 10px">{{item.left_icon}}</mat-icon>
+        <span>{{item.name}}</span>
+        <span class="icon-right" *ngIf="item.second_level.length != 0">
+          <span *ngIf="item.open">
+            <mat-icon style="font-size: 10px">expand_more</mat-icon>
+          </span>
+          <span *ngIf="!item.open">
+            <mat-icon style="font-size: 10px">chevron_left</mat-icon>
+          </span>
+        </span>
+      </a>
+      <ul *ngIf="item.open" class="second_nav">
+        <li *ngFor="let second_level_item of item.second_level;" [id]="second_level_item.id">
+          <a [routerLink]="second_level_item.link" routerLinkActive="active">{{second_level_item.name}}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

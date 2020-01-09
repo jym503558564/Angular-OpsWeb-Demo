@@ -1,0 +1,29 @@
+.navbar-right {
+  float: right!important;
+  margin-right: -15px;
+}
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navbar-top-links li{
+  display: inline-block
+}
+.navbar-top-links li a {
+  padding: 20px 10px;
+  color: #999c9e;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
